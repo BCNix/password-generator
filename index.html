@@ -12,17 +12,21 @@
 <body>
     <main>
         <h1>Generate a <span>random password</span></h1>
-        <h2 id="main-tagline">Protect yourself with stronger passwords every time.</h2>
+        <h2 class="main-tagline">Protect yourself with stronger passwords every time.</h2>
 
-        <div id="customize-container">
-            <div>
-                <p>Characters</p>
-                <div>
-                    <input type="range" min="8" max="100" value="8" class="range-slider" id="char-slider">
-                    <div id="char-ouput-value"></div>
+        <div class="customize-container">
+            <div class="customize-char-count container-style">
+                <p class="remove-margin">Characters</p>
+                <div class="char-input">
+                    <label for="char-range" class="visually-hidden">Character range</label>
+                    <input type="range" min="8" max="100" value="8" class="range-slider" id="char-range">
+
+                    <label for="char-count" class="visually-hidden">Character count</label>
+                    <input type="number" class="input-count" id="char-count" min="8" max="100" value="8">
                 </div>
             </div>
-            <div class="customize-pass-container">
+
+            <div class="customize-pass-container container-style">
                 <div class="customize-pass-numbers">
                     <p>Numbers</p>
                     <label class="switch">
@@ -38,11 +42,9 @@
                     </label>
                 </div>
             </div>
-            <div class="gen-container">
+            <div class="gen-container container-style">
                 <p>Generated password</p>
                 <div id="show-gen-password"></div>
-            </div>
-            <div>
                 <button class="btn" id="btn-copy-pass">Copy password</button>
                 <button class="btn" id="btn-refresh-pass">Refresh password</button>
             </div>
