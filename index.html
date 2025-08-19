@@ -15,6 +15,8 @@
         <h2 class="main-tagline">Protect yourself with stronger passwords every time.</h2>
 
         <div class="customize-container">
+
+            <!--Character Count Section-->
             <div class="customize-char-count container-style">
                 <p class="remove-margin">Characters</p>
                 <div class="char-input">
@@ -22,26 +24,35 @@
                     <input type="range" min="8" max="100" value="8" class="range-slider" id="char-range">
 
                     <label for="char-count" class="visually-hidden">Character count</label>
-                    <input type="number" class="input-count" id="char-count" min="8" max="100" value="8">
+                    <input type="number" class="input-count" id="char-count" min="8" max="100" value="20">
                 </div>
             </div>
 
+            <!--Numbers and Symbols Toggle Section-->
             <div class="customize-pass-container container-style">
-                <div class="customize-pass-numbers">
+
+                <!--Toggle for Numbers-->
+                <div class="toggle-container">
                     <p>Numbers</p>
                     <label class="switch">
-                        <input type="checkbox" id="switch-numbers-checkbox">
+                        <span class="visually-hidden">Numbers</span>
+                        <input type="checkbox" id="switch-numbers-checkbox" role="switch" checked>
                         <span class="slider round"></span>
-                    </label>
+                    </label>                    
                 </div>
-                <div class="customize-pass-symbols">
+
+                 <!--Toggle for Symbols-->
+                <div class="toggle-container">
                     <p>Symbols</p>
                     <label class="switch">
-                        <input type="checkbox" id="switch-symbols-checkbox">
+                        <span class="visually-hidden">Symbols</span>
+                        <input type="checkbox" id="switch-symbols-checkbox" role="switch">
                         <span class="slider round"></span>
-                    </label>
+                    </label> 
                 </div>
             </div>
+
+            <!--Generate Password Section-->
             <div class="gen-container container-style">
                 <p>Generated password</p>
                 <div id="show-gen-password"></div>
