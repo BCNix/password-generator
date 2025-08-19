@@ -250,6 +250,7 @@ input:checked + .slider:before {
     flex: 1 1 0;
     font-family: inherit;
     border: 1px solid #109d6e;
+    cursor: pointer;
 }
 
 .btn-white{
@@ -260,6 +261,10 @@ input:checked + .slider:before {
 .btn:hover{
     border: 1px solid #1B3F83;
     background-color: #1B3F83;
+}
+
+.btn:focus{
+    outline: 3px double #109d6e;
 }
 
 .btn-white:hover{
