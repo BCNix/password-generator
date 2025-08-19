@@ -212,3 +212,56 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* === Generate Password Section === */
+.gen-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gen-password-container{
+    /* margin: 2rem 0; */
+    padding: 1.75rem;
+    border: 1px solid #D6D6D6;
+}
+
+#gen-password{
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    overflow-wrap: break-word;
+}
+
+/* === Buttons for Copy & Refresh Password Section === */
+.btn-container{
+    display: flex;
+    gap: 10px;
+    padding-top: 5px;
+    
+}
+
+.btn{
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: #10B981;
+    flex: 1 1 0;
+    font-family: inherit;
+    border: 1px solid #109d6e;
+}
+
+.btn-white{
+    background-color: white;
+    color: #10B981;
+}
+
+.btn:hover{
+    border: 1px solid #1B3F83;
+    background-color: #1B3F83;
+}
+
+.btn-white:hover{
+    color: white;
+}
