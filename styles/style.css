@@ -78,12 +78,17 @@ h1 span{
 
 .input-count{
     border-radius: 5px;
-    border-style: double;
+    border: 1px solid #D6D6D6;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
     width: 3rem;
 
+}
+
+.input-count:focus-visible{
+    border-color: #10B981;
+    outline: 2px double #10B981;
 }
 
 .input-count::-webkit-outer-spin-button,
