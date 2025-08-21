@@ -220,6 +220,7 @@ input:checked + .slider:before {
 }
 
 .gen-password-container{
+    
     padding: 1.75rem;
     border: 1px solid #D6D6D6;
 }
@@ -228,7 +229,7 @@ input:checked + .slider:before {
     text-align: center;
     letter-spacing: 2px;
     line-height: 2rem;
-    overflow-wrap: break-word;
+    word-break: break-all;;
 }
 
 /* === Buttons for Copy & Refresh Password Section === */
@@ -258,8 +259,8 @@ input:checked + .slider:before {
 }
 
 .btn:hover{
-    border: 1px solid #1B3F83;
-    background-color: #1B3F83;
+    border: 1px solid #108860;
+    background-color: #108860;
 }
 
 .btn:focus{
@@ -268,6 +269,11 @@ input:checked + .slider:before {
 
 .btn-white:hover{
     color: white;
+}
+
+.btn-copied{
+    border: 1px solid #1B3F83;
+    background-color: #1B3F83;
 }
 
 @media (min-width: 375px){
