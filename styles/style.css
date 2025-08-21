@@ -232,6 +232,14 @@ input:checked + .slider:before {
     word-break: break-all;;
 }
 
+.gen-password-numbers{
+    color: #FFAA00
+}
+
+.gen-password-symbols{
+    color: #FF00A1;
+}
+
 /* === Buttons for Copy & Refresh Password Section === */
 .btn-container{
     display: flex;

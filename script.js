@@ -84,11 +84,24 @@ refreshPassword.addEventListener("click", function() {
 
 function showPassword(){
 
-    displayPassword.textContent = generatePassword(characterCount, charPools, includeSymbols, includeNumbers).join("");
+    displayPassword.textContent = "";
 
-    let password =  displayPassword.textContent;
+    let password =  generatePassword(characterCount, charPools, includeSymbols, includeNumbers).join("");
 
-    return password;
+    for(let i = 0; i < password.length; i++){
+        const char = password[i];
+        const span = document.createElement("span");
+        span.textContent = char;
+
+        if(/[0-9]/.test(char)){
+            span.classList.add("gen-password-numbers");
+        } else if(/[\W_]/.test(char)){
+            span.classList.add("gen-password-symbols");
+        }
+
+        displayPassword.appendChild(span);
+    }
+
 }
 
 
@@ -99,7 +112,7 @@ function randomItem(arr){
     return arr[arrItem];
 }
 
-// Shuffle an array using (Fisher-Yates)
+// Shuffle an array
 function shuffleArray(arr) {
     for(let i = arr.length - 1; i > 0; i--){
         const j = Math.floor(Math.random() * (i + 1));
