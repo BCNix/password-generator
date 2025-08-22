@@ -66,13 +66,13 @@ copyPassword.addEventListener("click", function(){
     let content = displayPassword.textContent;
 
     navigator.clipboard.writeText(content).then(()=> {
-        copyPassword.textContent = "Copied!";
+        copyPassword.textContent = "Copied Successfully!";
         copyPassword.classList.add("btn-copied");
 
         setTimeout(()=> {
             copyPassword.textContent = "Copy password";
             copyPassword.classList.remove("btn-copied");
-        }, 1500)
+        }, 2000)
     });
 
 })
