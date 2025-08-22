@@ -66,7 +66,7 @@ copyPassword.addEventListener("click", function(){
     let content = displayPassword.textContent;
 
     navigator.clipboard.writeText(content).then(()=> {
-        copyPassword.textContent = "Copied!";
+        copyPassword.textContent = "Password Copied!";
         copyPassword.classList.add("btn-copied");
 
         setTimeout(()=> {
