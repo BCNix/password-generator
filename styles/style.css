@@ -267,8 +267,8 @@ input:checked + .slider:before {
 }
 
 .btn:hover{
-    border: 1px solid #493E11;
-    background-color: #493E11;
+    border: 1px solid #1F2937;
+    background-color: #1F2937;
 }
 
 .btn:focus{
@@ -280,8 +280,8 @@ input:checked + .slider:before {
 }
 
 .btn-copied{
-    border: 1px solid #493E11;
-    background-color: #493E11;
+    border: 1px solid #1F2937;
+    background-color: #1F2937;
 }
 
 @media (min-width: 375px){
